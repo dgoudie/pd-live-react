@@ -34,7 +34,7 @@
                 {
                     "name": "@electron-forge/maker-squirrel",
                     "config": {
-                        "name": "PagerDuty Live Incidents"
+                        "name": "PagerDutyLiveIncidents"
                     }
                 },
                 {
