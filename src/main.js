@@ -20,6 +20,11 @@ const createWindow = () => {
 
     // Open the DevTools.
     isDev && mainWindow.webContents.openDevTools();
+
+    mainWindow.webContents.on('will-navigate', function (event, newUrl) {
+        console.log(newUrl);
+        // More complex code to handle tokens goes here
+    });
 };
 
 // This method will be called when Electron has finished
