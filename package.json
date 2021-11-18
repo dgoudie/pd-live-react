@@ -20,6 +20,7 @@
     "config": {
         "forge": {
             "packagerConfig": {
+                "icon": "./src/assets/images/pd_logo.png",
                 "protocols": [
                     {
                         "name": "default_protocol",
