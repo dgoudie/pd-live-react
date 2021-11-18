@@ -126,7 +126,7 @@ export default class PDOAuth {
             'https://app.pagerduty.com/oauth/authorize?' +
             `client_id=${clientID}&` +
             `client_secret=${clientSecret}&` +
-            `redirect_uri=${'https://google.com'}&` +
+            `redirect_uri=${redirectURL}&` +
             'response_type=code&' +
             `code_challenge=${encodeURI(challenge)}&` +
             'code_challenge_method=S256';
@@ -203,6 +203,7 @@ export default class PDOAuth {
         if (!redirectURL) {
             // assume that the redirect URL is the current page
             redirectURL = `${location.protocol}//${location.host}${location.pathname}`;
+            redirectURL = `http://app.local`;
         }
 
         const code = urlParams.get('code');
