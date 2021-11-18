@@ -19,7 +19,16 @@
     "license": "MIT",
     "config": {
         "forge": {
-            "packagerConfig": {},
+            "packagerConfig": {
+                "protocols": [
+                    {
+                        "name": "default_protocol",
+                        "schemes": [
+                            "x-uprr-pagerduty"
+                        ]
+                    }
+                ]
+            },
             "makers": [
                 {
                     "name": "@electron-forge/maker-squirrel",
